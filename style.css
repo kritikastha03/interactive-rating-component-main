@@ -1,0 +1,142 @@
+:root{
+    --body-bg: hsl(216, 12%, 8%);
+    --container-bg: hsl(213, 19%, 18%);
+    --primary:  hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    background-color: var(--body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Overpass;
+}
+
+.container{
+    border-radius: 10px;
+    max-width: 400px;
+    background-color: var(--container-bg);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+img.image1,.rating{
+    border: none;
+    border-radius: 50%; 
+    background-color:  hsl(216, 9%, 21%);
+    padding: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.rate{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 2rem;
+    color: var(--white);
+    display: flex;
+}
+
+.text{
+    font-size: 1rem;
+    color: hsl(217, 12%, 63%);
+    line-height: 30px;
+    font-weight: 700;
+}
+
+button.rating{
+    color:  var(--white);
+    display: inline;
+    width: 37;
+}
+
+.image1{
+    max-width: 25px;
+    max-height: 25px;
+}
+
+button#submit{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    align-content: center;
+    max-width: 100%;
+    border: 1px;
+    margin: 0px;
+    border-radius: 25px;
+    padding: 10px 100px;
+    background-color: var(--primary);
+}
+
+.link{
+    text-decoration: none;
+    color:  var(--white);
+}
+
+button.rating:focus{
+    background-color:hsl(217, 12%, 63%) ;
+}
+
+button.rating:hover{
+    background-color:var(--primary) ;
+}
+
+button#submit:hover{
+    background-color:  var(--white);
+}
+
+.link:hover{
+    color: var(--primary);
+}
+
+div#selected{
+    /* text-align: center; */
+    color:var(--primary) ;
+    width: fit-content;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: hsla(216, 12%, 8%, 0.661) ;
+    font-size: 13px;
+}
+
+p.thankyou{
+    text-align: center;
+    font-size:10px;
+    display: flex;
+    gap: 15px;
+}
+
+.containerSecond{
+    border-radius: 10px;
+    background-color: var(--container-bg);
+    color:  var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Overpass', sans-serif;
+    padding: 30px;
+    max-width: 290px;
+}
+
+h1.thankyou{
+   display: inline;
+    font-size: 30px;
+}
